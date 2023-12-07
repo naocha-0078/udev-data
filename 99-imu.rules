@@ -1,0 +1,9 @@
+ACTION=="add", \
+KERNEL=="ttyUSB*", \
+NAME="ddt-motor", \
+SUBSYSTEM=="usb" ,\
+ATTRS{idVendor}=="1a86", \
+ATTRS{idProduct}=="7523", \
+GROUP="plugdev", \
+SYMLINK+="imu", \
+MODE="66
